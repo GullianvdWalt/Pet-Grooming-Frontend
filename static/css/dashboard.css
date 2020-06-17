@@ -61,6 +61,23 @@
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
 }
+/*  Menu Icon Start */
+/* Menu icon */
+.icon{
+  display: block;
+  color: #FF69B4;
+  float: right;
+  font-size: 2.2em;
+
+  display: none;
+  filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+}
+.icon:hover{
+  color: #ffffff;
+}
+
+/*  Menu Icon End */
+
 ul{
     display: flex;
     flex-direction: column;
@@ -91,7 +108,7 @@ a {
 }
 a:hover{
     color: #FF69B4;
-
+    transition: 0.5s;
 }
 /*  Icons - Nav*/
 .nav-icon{
@@ -297,6 +314,7 @@ td{
     outline: none;
     transition: 0.5s;
     padding-left: 5px;
+    cursor: pointer;
 }
 .checkbox:before{
     content: "";
@@ -332,8 +350,6 @@ td{
 
 /*  Media Queries */
 
-/*  Media Queries */
-
 /*  Smaller Desktop*/
 @media screen and (max-width: 1680px) {
 
@@ -341,6 +357,7 @@ td{
 
 /*  Laptop */
 @media screen and (max-width: 1440px) {
+/*Navbar*/
     a{
         font-size: 1.2em;
     }
@@ -348,6 +365,7 @@ td{
         width: 70px;
         height: 70px;
     }
+/*  Schedule Sction */
     .schedule-head{
         font-size: 1.5em;
     }
@@ -358,6 +376,7 @@ td{
     h3{
         font-size: 1.3em;
     }
+/*  Schedule Table  */
     td{
         font-size: 1.2em;
     }
@@ -370,6 +389,7 @@ td{
     }
 }
 @media screen and (max-width: 1300px){
+    /*  Schedule Table Row Text*/
     td{
 
         font-size: 1.125em;
@@ -379,9 +399,11 @@ td{
 }
 /*  Laptops/Tablets */
 @media screen and (max-width: 1200px) {
+    /* Main Page Container */
     .wrapper{
         flex-direction: column;
     }
+    /*  Navbar    */
     .logo-container{
         padding: 0.5em;
         text-align: center;  
@@ -399,44 +421,70 @@ td{
         flex-direction: row;
         margin: 0;
         padding-top: 40px;
-        vertical-align: top;   
-        text-align: center;
         overflow: hidden;
     }
     li{
-        width: 150px;
         padding: 0.5em;
         text-align: center;
     }
     li a{
-       display: inline-block;
-       width: 150px;
+       width: 210px;
        padding-bottom: 50px;
 
     }
-    .nav-icon{
+    li a img{
         width: 60px;
         height: 60px;
         display: block;
-        margin-left: 42px;
         margin-bottom: 10px;
-        
+        margin-left: 25%;
     }
+    /*Schedule Section */
 
+    .body-section{
+        max-width: 100%;
 
+    }
+    .schedule-container{
+        margin-bottom: 10%;
+
+    }
 }   
 
-@media screen and (max-width: 768px) {
-
-
+@media screen and (max-width: 1000px) {
+    /*Menu Icon */
+    .icon{
+        display: inline-block;
+        margin-right: 5%;
+        margin-bottom: 15x;
+    }
+    #nav-list{
+        display: none;
+        flex-direction: column;
+    }   
+    ul{
+        text-align: center;
+    }
+    ul li{
+        margin: 15px;  
+        margin-left: 30px;
+        background-color: rgb(128,128,128);  
+        filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    }
+    ul li a{
+        display:inline-block;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1.6em;
+    }
+    .nav-icon{
+        vertical-align: middle;
+        width: 90px;
+        height: 90px;
+    }
+}
+/* Medium ~ Small Devices */
+@media screen and (max-width: 750px) {
+    
 }
 
-/* Medium Devices */
-@media screen and (max-width: 768px) {
-
-}
-
-/*  Small Devices */
-@media screen and (max-width: 620px) {
-        
-}

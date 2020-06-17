@@ -1,3 +1,12 @@
+ /* Menu hide/show function */
+ function viewMenu(){
+    var y = document.getElementById("nav-list");
+      if (y.style.display === "flex") {
+      y.style.display = "none";
+    }else {
+      y.style.display = "flex";
+    }
+}
 //Date Picker
 // Constants
 const date_picker_element = document.querySelector('.date-picker');

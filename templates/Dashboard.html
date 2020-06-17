@@ -8,8 +8,10 @@
     <!--    Styles     -->
     <link rel="stylesheet" href="/static/css/styles-all.css">
     <link rel="stylesheet" href="/static/css/dashboard.css">
-
-    <!--    Date Picker         -->
+        <!-- Mobile Menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- For Colapsing Menu -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -22,7 +24,8 @@
                 </div>
 
                 <div class="navigation-container">
-                        <ul>
+                    <a href="javascript:void(0);" class="icon" onclick="viewMenu()" id="icon"> <i class="fa fa-bars"> </i> </a>
+                        <ul class="navigation-list" id="nav-list"> 
                                 <li><a href="Customers.html"><img src="/static/Icons/dog.jpg" alt="customers" class="nav-icon"> Customers</a></li>
                                 <li><a href="NewAppointment.html"><img src="/static/Icons/newAppointment.png" alt="newAppointment" class="nav-icon">New Appointment</a></li>
                                 <li><a href="Employees.html"><img src="/static/Icons/employee.png" alt="employee" class="nav-icon">Employees</a></li>
@@ -30,8 +33,9 @@
                                 <li><a href="JobCard.html"><img src="/static/Icons/grooming.png" alt="jobCard" class="nav-icon"> Job Card</a></li>
                                 <li><a href="ManageBusiness.html"><img src="/static/Icons/manage.png" alt="manageBusiness" class="nav-icon"> Manage Business</a></li>
                         </ul>
+
+                 </div>
                 </div>
-            </div>
             <!--     Navigation End        -->
             <div class="body-section">
                 <!-- Schedule Section  Start -->
