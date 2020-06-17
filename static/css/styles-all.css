@@ -50,5 +50,43 @@ h1{
 footer{
     text-align: center;
     max-height: 50px;
-    background-color: cadetblue;
+    
+}
+
+/*  Media Queries */
+
+/*  Smaller Desktop*/
+@media screen and (max-width: 1680px) {
+
+}
+
+/*  Laptop */
+@media screen and (max-width: 1440px) {
+    h1{
+        font-size: 1.4em;
+    }
+}
+
+/*  Laptops/Tablets */
+@media screen and (max-width: 1200px) {
+    h1{
+        font-size: 1.28em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.25em;
+    }
+
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+
+}
+
+/*  Small Devices */
+@media screen and (max-width: 620px) {
+        
 }

@@ -141,7 +141,6 @@ a:hover{
     filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.3));
 }
 
-
 .calender-pick-container{
     width: 100%;
     padding: 1em;
@@ -176,7 +175,7 @@ h3{
 	justify-content: center;
 	align-items: center;
 	color: #313131;
-	font-size: 28px;
+	font-size: 1.75em;
 }
 
 .date-picker .dates {
@@ -207,7 +206,7 @@ h3{
 	justify-content: center;
 	align-items: center;
 	color: #313131;
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 .date-picker .dates .month .arrows:hover {
@@ -274,7 +273,7 @@ td{
     font-size: 1.3em;
     text-align: left;
     padding: 0.6em;
-    
+    line-height: 1.6;
 }
 
 .time{
@@ -333,6 +332,8 @@ td{
 
 /*  Media Queries */
 
+/*  Media Queries */
+
 /*  Smaller Desktop*/
 @media screen and (max-width: 1680px) {
 
@@ -340,20 +341,102 @@ td{
 
 /*  Laptop */
 @media screen and (max-width: 1440px) {
+    a{
+        font-size: 1.2em;
+    }
+    .nav-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .schedule-head{
+        font-size: 1.5em;
+    }
+    .schedule-icon{
+        width: 70px;
+        height: 70px;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    td{
+        font-size: 1.2em;
+    }
+    .date-picker .selected-date {
+        font-size: 1.5em;
+    }   
+
+    .date-picker .dates .month .arrows{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1300px){
+    td{
+
+        font-size: 1.125em;
+    }
+
+
+}
+/*  Laptops/Tablets */
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .logo-container{
+        padding: 0.5em;
+        text-align: center;  
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    .navbar-container{
+        min-width: 100%;
+        max-height: 20%;
+        padding-bottom: 0;
+         
+    }
+    ul{
+        flex-direction: row;
+        margin: 0;
+        padding-top: 40px;
+        vertical-align: top;   
+        text-align: center;
+        overflow: hidden;
+    }
+    li{
+        width: 150px;
+        padding: 0.5em;
+        text-align: center;
+    }
+    li a{
+       display: inline-block;
+       width: 150px;
+       padding-bottom: 50px;
+
+    }
+    .nav-icon{
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin-left: 42px;
+        margin-bottom: 10px;
+        
+    }
+
+
+}   
+
+@media screen and (max-width: 768px) {
+
 
 }
 
-/*  Tablets*/
-@media screen and (max-width: 1024px) {
+/* Medium Devices */
+@media screen and (max-width: 768px) {
 
 }
 
-/* Large Smartphone*/
-@media screen and (max-width: 375px) {
-
-}
-
-/*  Small Smarphones */
-@media screen and (max-width: 375px) {
-
+/*  Small Devices */
+@media screen and (max-width: 620px) {
+        
 }
