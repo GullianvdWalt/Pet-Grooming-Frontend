@@ -1,0 +1,54 @@
+/* The styles in this CSS file are the general styles which appliet to all pages*/
+
+/*
+    Fonts
+
+    Import Fonts:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*
+    For Applying Fonts: 
+                            font-family: 'Montserrat', sans-serif;
+                            font-family: 'Roboto', sans-serif;
+                            font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+*/
+/*
+    colors:
+            Body Background: #ffffff
+            Background nav: #505050
+            Pink: #FF69B4
+
+*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-container{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #505050;
+    color: #ffffff;
+}
+
+h1{
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 1.7em;
+    color: #FF69B4;
+    
+}
+
+footer{
+    text-align: center;
+    max-height: 50px;
+    background-color: cadetblue;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Home Mobile Pet Grooming</title>
+
+    <!--    Styles     -->
+    <link rel="stylesheet" href="/static/css/styles-all.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+
+    <!--    Date Picker         -->
+
+</head>
+<body>
+    <div class="wrapper">  
+            <!--     Navigation Start        -->
+            <div class="navbar-container">
+                
+                <div class="logo-container">
+                    <h1 class="logo"> @Home Mobile Pet Grooming </h1>
+                </div>
+
+                <div class="navigation-container">
+                        <ul>
+                                <li><a href="Customers.html"><img src="/static/Icons/dog.jpg" alt="customers" class="nav-icon"> Customers</a></li>
+                                <li><a href="NewAppointment.html"><img src="/static/Icons/newAppointment.png" alt="newAppointment" class="nav-icon">New Appointment</a></li>
+                                <li><a href="Employees.html"><img src="/static/Icons/employee.png" alt="employee" class="nav-icon">Employees</a></li>
+                                <li><a href="Finance.html"><img src="/static/Icons/finance.png" alt="finance" class="nav-icon"> Finance</a></li>
+                                <li><a href="JobCard.html"><img src="/static/Icons/grooming.png" alt="jobCard" class="nav-icon"> Job Card</a></li>
+                                <li><a href="ManageBusiness.html"><img src="/static/Icons/manage.png" alt="manageBusiness" class="nav-icon"> Manage Business</a></li>
+                        </ul>
+                </div>
+            </div>
+            <!--     Navigation End        -->
+            <div class="body-section">
+                <!-- Schedule Section  Start -->
+                <div class="schedule-container">
+                            <div class="head-container"><img src="/static/Icons/schedule.jpg" alt="schedule" class="schedule-icon"> <h2 class="schedule-head"> Schedule </h2></div>
+                            
+                    <div class="calender-pick-container">
+                        <h3>Date</h3>
+                        <div class="date-picker">
+                            <div class="selected-date"></div>
+
+                            <div class="dates">
+                                <div class="month">
+                                    <div class="arrows prev-mth">&lt;</div>
+                                    <div class="mth"></div>
+                                    <div class="arrows next-mth">&gt;</div>
+                                </div>
+
+                                <div class="days"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                        <div class="schedule-table-container">
+                            <table>
+                                <thead>
+                                    <tr>    
+                                        <th colspan="4">Monday</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="time">09:00 - 10:15</td>
+                                        <td>Sonja Van Der Merwe - 084 5076 275 - 7 Bunteberg Str Sasolburg</td>
+                                         <td> Rocky (Jack Russel Terrier) Wash & Dip</td>
+                                        <td class="checkbox-column">
+                                                <div class="checkbox-wrapper">
+                                                    <input type="checkbox" id="check" hidden/>
+                                                    <label for="check" class="checkmark"></label>
+                                                </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-inbetween"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                <!-- Schedule Section  End -->
+            <div class="footer">Pet Grooming &copy; 2020</div>
+     </div>
+    </div>
+
+
+
+<!--    Scripts         -->
+<script src="/static/js/dashboard.js"></script>
+
+
+</body>
+    
+</html>

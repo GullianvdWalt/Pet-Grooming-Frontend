@@ -1,0 +1,371 @@
+/*      Styles for the Dashboard        */
+
+/* The styles in this CSS file are the general styles which appliet to all pages*/
+
+/*
+    Fonts
+
+    Import Fonts:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*
+    For Applying Fonts: 
+                            font-family: 'Montserrat', sans-serif;
+                            font-family: 'Roboto', sans-serif;
+                            font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+    colors:
+            Body Background: #ffffff
+            Background nav: #505050
+            Pink: #FF69B4
+
+    Shadow Effects:
+                        Text  - standard -  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+                              - hard shadow - text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
+                              - heavy shadow - text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                                                            0px 8px 13px rgba(0,0,0,0.1),
+                                                            0px 18px 23px rgba(0,0,0,0.1);  
+
+                        Box Shadow :    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+                        Icons:
+                                -
+                    
+*/
+
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+/*  Style Navbar Starts  */
+.navbar-container{
+    width: 28%;
+    min-height: 100%;
+    display: inline-block;
+    padding-bottom: 6em;
+}
+.logo-container{
+    padding: 10px 5px;
+    text-align: center;
+}
+.logo{
+    
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+li{
+    display:inline-block;
+    text-align: left;
+    min-height: 160px;
+    min-width: 150px;
+
+
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    
+}
+a:hover{
+    color: #FF69B4;
+
+}
+/*  Icons - Nav*/
+.nav-icon{
+    width: 94px;
+    height: 94px;
+    margin-right: 20px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    vertical-align: middle;
+}
+/*  Style Navbar Ends  */
+
+/* Schedule Section */
+.body-section{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.schedule-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+/* Heading */
+.head-container{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.schedule-head{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-left: 15px;
+    color: #303030;
+    letter-spacing: 2px;
+}
+.schedule-icon{
+    width: 100px;
+    height: 100px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.3));
+}
+
+
+.calender-pick-container{
+    width: 100%;
+    padding: 1em;
+    margin-top: 30px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 1.5em;
+    text-align: center;
+    color: #FF69B4;
+}
+/* Calendar (Date Picker) Style Begin*/
+.date-picker {
+	position: relative;
+	width: 400px;
+	height: 60px;
+	background-color: #ffffff;
+	margin: 30px auto;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	user-select: none;
+}
+
+.date-picker:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .selected-date {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 28px;
+}
+
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	background-color: #FFF;
+}
+
+.date-picker .dates.active {
+	display: block;
+}
+
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #EEE;
+}
+
+.date-picker .dates .month .arrows {
+	width: 45px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 20px;
+}
+
+.date-picker .dates .month .arrows:hover {
+	background-color: #F3F3F3;
+}
+
+.date-picker .dates .month .arrows:active {
+	background-color: #00CA85;
+}
+
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 200px;
+}
+.date-picker .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+}
+.date-picker .dates .days .day.selected {
+	background-color:  #FF69B4;
+}
+/* Calendar (Date Picker) Style Ends*/
+
+/*  Schedule Table Section Start */
+.schedule-table-container{
+    width: 90%;
+    min-height: 70%;
+    margin-left: 5px;
+}
+
+table{
+  width: 100%;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+thead{
+    background-color: #505050;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+}
+th{
+    text-align: center;
+    padding: 12px 15px;
+}
+tbody tr{
+    height: 11.3em;
+    
+}
+td{
+    background-color: lightgrey;
+    font-size: 1.3em;
+    text-align: left;
+    padding: 1em;
+}
+.checkbox-column{
+   background-color: #ffffff;   
+   width: 100px;
+  
+}
+/*  Checkbox*/
+.checkbox-wrapper{
+    position: absolute;
+    overflow: hidden;
+}
+/*  Checkbox Container */
+.checkmark{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 3px solid #FF69B4;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.4s;
+}
+
+/* Apply When Checkbox is checked   */
+#check:checked ~ .checkmark::after{
+    border-right: 5px solid #FF69B4;
+    border-bottom: 5px solid #FF69B4;
+}
+
+/*  Checkmark */
+.checkmark::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 45px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(8);
+    opacity: 0;
+    transition: all 0.4s;
+}
+#check:checked ~ .checkmark::after{
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+    
+}
+
+
+.time{
+   color: #FF69B4;
+   font-weight: bold;
+}
+.row-inbetween{
+    height: 5em;
+}
+/*  Schedule Table Section Ends */
+
+/* Footer Section */
+.footer{
+    width: auto;
+    max-height: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #FF69B4;
+    padding: 0.5em;
+}
+
+/*  Media Queries */
+
+/*  Smaller Desktop*/
+@media screen and (max-width: 1680px) {
+
+}
+
+/*  Laptop */
+@media screen and (max-width: 1440px) {
+
+}
+
+/*  Tablets*/
+@media screen and (max-width: 1024px) {
+
+}
+
+/* Large Smartphone*/
+@media screen and (max-width: 375px) {
+
+}
+
+/*  Small Smarphones */
+@media screen and (max-width: 375px) {
+
+}
