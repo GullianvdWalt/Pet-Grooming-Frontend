@@ -236,9 +236,10 @@ h3{
 
 /*  Schedule Table Section Start */
 .schedule-table-container{
-    width: 90%;
+    width: 92%;
     min-height: 70%;
     margin-left: 5px;
+    
 }
 
 table{
@@ -265,18 +266,28 @@ th{
 }
 tbody tr{
     height: 11.3em;
-    
+    /* White Space Between Rows */
+    border-bottom: 20px solid #FFF;
 }
 td{
     background-color: lightgrey;
     font-size: 1.3em;
     text-align: left;
-    padding: 1em;
+    padding: 0.6em;
+    
 }
+
+.time{
+   color: #FF69B4;
+   font-weight: 800;
+   min-width: 140px;
+}
+
+
 .checkbox-column{
    background-color: #ffffff;   
    width: 100px;
-  
+   
 }
 /*  Checkbox*/
 .checkbox-wrapper{
@@ -322,13 +333,8 @@ td{
 }
 
 
-.time{
-   color: #FF69B4;
-   font-weight: bold;
-}
-.row-inbetween{
-    height: 5em;
-}
+
+
 /*  Schedule Table Section Ends */
 
 /* Footer Section */
