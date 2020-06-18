@@ -65,7 +65,8 @@
     display: inline;
     filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
     padding: 1em;
-    margin-left: 40px;
+    margin-left: 10px;
+    font-size: 30px;
 }
 .home-icon{
     display: inline;
@@ -142,13 +143,13 @@
 /*      New Customer Button     */
 .new-customer-button{
     display: inline-block;
-    width: 280px;
+    width: 17.5em;
+    width: 90%;
     height: 90px;
     border-radius: 15px;
     padding: 1em;
     background-color: #505050;
     margin-bottom: 10%;
-
 }
 
 .new-customer-button a img{
@@ -201,11 +202,10 @@
 label{
     font-family: 'Montserrat', sans-serif;
     color: #505050;
-    font-size: 1.5em;
-    
+    font-size: 1.5em; 
 }
 .filter-input{
-    width: 280px;
+    width: 90%;
     height: 60px;
     border: 2px solid #505050;
     margin-top: 20px;
@@ -340,27 +340,397 @@ table tr:nth-child(even){
 /*  Media Queries */
 
 /*  Smaller Desktop*/
-@media screen and (max-width: 1680px) {
-
+@media screen and (max-width: 1606px) {
+    .new-customer-button a{
+        font-size: 1.2em;
+    }
 }
 
 /*  Laptop */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
+
+    /* Nav Bar*/
+    .home-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .logo{
+        font-size: 1.6em;
+    }
+    .customer-icon{
+        width: 75px;
+        height: 75px;
+    }
+    .customer-nav-header{
+        font-size: 1.7em;
+    }
+
+    /*  Filter Section  */
+    .new-customer-button a img{
+        width: 55px;
+        height: 55px;
+    }
+    .new-customer-button a{
+        font-size: 1.1em;
+    }
+    .filter-heading img{
+        vertical-align: middle;
+        width: 55px;
+        height: 55px;
+    }
+    .filter-text{
+        font-size: 1.2em;
+    }
+    label{
+        font-size: 1.2em; 
+    }
+    .filter-input{
+        width: 200px;
+        height: 50px;
+        font-size: 1.4em;
+    }
+    /*  Table   */
+    th{
+        font-size: 1em;
+    }
+    td{
+        font-size: 1.1em;
+        line-height: 24px;    
+    }   
+    .cell{
+        width: 30%;
+    }
+    .edit-icon, .delete-icon{
+        width: 55px;
+        height: 55px;
+    }
+
 
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1370px){
+    /* Nav Bar*/
+    .home-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .logo{
+        font-size: 1.6em;
+    }
+    .customer-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .customer-nav-header{
+        font-size: 1.6em;
+    }
 
+    /*  Filter Section  */
+    .new-customer-button{
+        width: 200px;
+        height: 80px;
+    }
+
+    .new-customer-button a img{
+        width: 50px;
+        height: 50px;
+    }
+    .new-customer-button a{
+        font-size: 1em;
+    }
+
+    .filter-heading img{
+        vertical-align: middle;
+        width: 55px;
+        height: 55px;
+    }
+    .filter-text{
+        font-size: 1.2em;
+    }
+    label{
+        font-size: 1.2em; 
+    }
+    .filter-input{
+        width: 90%;
+        height: 50px;
+        font-size: 1.4em;
+    }
+    /*  Table   */
+    th{
+        font-size: 0.9em;
+    }
+    td{
+        font-size: 1em;
+        line-height: 24px;    
+    }   
+    .cell{
+        width: 30%;
+    }
+    .edit-icon, .delete-icon{
+        width: 55px;
+        height: 55px;
+    }
 
 }
 /*  Laptops/Tablets */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1310px) {
+    .customer-section{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .filter-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .filter-container{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin-left: 5%;
+    }
+    .new-customer-button{
+        display: block;
+        margin-top: 5%;
+        width: 22%;
+        height: 10%;
+        padding: 1em;
+        margin-bottom: 0;
+    }
+    .new-customer-button a{
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .filter-input-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 6%;
+    }
+    .filter-heading{
+        display: inline-block;
+        width: 20%;
+    }    
+    label{
+        display: inline;
+        font-size: 1.5em;
+    }
+    .filter-heading img{
+        width: 65px;
+        height: 65px;
+    }
+    .filter-text{
+        display: block;
+        font-size: 1.5em;
+    }
+    label{
+        font-family: 'Montserrat', sans-serif;
+        color: #505050;
+        font-size: 1.5em; 
+    }
+    .filter-input{
+        width: 30%;
+        height: 40%;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.5em;
+
+    }
+    .customer-table-container{
+        width: 100%;
+        margin: 0;
+    }
 
 }
+@media screen and (max-width: 1811px) {
+    .filter-heading img{
+        width: 60px;
+        height: 60px;
+    }    
+    .filter-text{
+        font-size: 1.3em;
+    }
+    label{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 1090px) {
+    /* Nav Bar*/
+    .home-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+    .customer-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .customer-nav-header{
+        font-size: 1.4em;
+    }
+    .customer-table-container{
+        overflow-x:auto;
+    }
+    .new-customer-button img{
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+    }
+    .new-customer-button a{
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
+    .navbar-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .logo-container{
+        display: block;
+        padding-left: 0;
+        width: auto;
+        padding: 0;
+        margin-top: 2%;
+        margin-left: 0px;
+    }
+    .logo{
+        display: block;
+        padding: 0;
+        margin-left: 0px;
+        font-size: 30px;
+        font-size: 1.3em;
+    }
+    .home-icon{
+        display: block;
+        width: 50px;
+        height: 50px;
+        
+    }
+    .customer-logo-container{
+        padding: 0;
+        width:auto;
+        margin-right: 0;
+
+    }
+    .customer-icon{
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .customer-nav-header{
+        display: block;
+        font-size: 1.3em;
+        letter-spacing: 3px;
+        margin-left: 0;
+    }    
+    .customer-table-container{
+        overflow-x:auto;
+    }
+
+    /*      New Customer Button     */
+    .new-customer-button{
+        display: block;
+        width: 30%;
+        height: 10%;
+        border-radius: 15px;
+        padding: 0.5em;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    .filter-container{
+        width: 50%;
+        text-align: center;
+    }
+    .filter-heading{
+        width: 30%;
+    }
+    .filter-input-container{
+        flex-direction: column;
+        margin-top: 0;
+        text-align: center;
+        margin-left: 40px;
+    }
+    .filter-input-container label{
+        width: 70%;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+    }
+    .filter-input{
+        margin: 0;
+        width: 70%;
+        padding: 0;
+    }
 
 }
-/* Medium ~ Small Devices */
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+@media screen and (max-width: 500px) {
+    .logo-container{
+        margin-top: 3%;
+        width: 35%;
+        text-align: left;
+        line-height: 30px;
+    }
+    .home-icon{
+        margin-left: 25%;
+    }
+    .customer-icon{
+        margin-left: 25%;
+    }
+    .new-customer-button{
+        display: block;
+        width: 35%;
+        height: 10%;
+        border-radius: 15px;
+        padding: 0.5em;
+        margin-bottom: 0;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .new-customer-button a img{
+        width: 45px;
+        height: 45px;
+        margin-left: 30%;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .new-customer-button a{
+        font-size: 1.1em;
+        display: block;
+    }
+
+    .filter-container{
+        width: 60%;
+        text-align: center;
+    }
+    .filter-heading{
+        width: 30%;
+    }
+    .filter-input{
+        width: 100%;
+    }   
+    .filter-text{
+        font-size: 1.1em;
+    }
+   .filter-input-container label{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 0;
+        font-size: 1.1em;
+    }
+
 
 }
