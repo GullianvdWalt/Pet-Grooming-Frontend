@@ -1,0 +1,366 @@
+/*      Styles for the Dashboard        */
+
+/* The styles in this CSS file are the general styles which appliet to all pages*/
+
+/*
+    Fonts
+
+    Import Fonts:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*
+    For Applying Fonts: 
+                            font-family: 'Montserrat', sans-serif;
+                            font-family: 'Roboto', sans-serif;
+                            font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+    colors:
+            Body Background: #ffffff
+            Background nav: #505050
+            Pink: #FF69B4
+
+    Shadow Effects:
+                        Text  - standard -  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+                              - hard shadow - text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
+                              - heavy shadow - text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                                                            0px 8px 13px rgba(0,0,0,0.1),
+                                                            0px 18px 23px rgba(0,0,0,0.1);  
+
+                        Box Shadow :    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+                        Icons:
+                                -
+                    
+*/
+/*  Main Page Container */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/*  Style Navbar Starts  */
+.navbar-container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+.logo-container{
+    display: inline-block;
+    padding-left: 1.5em;
+    width: auto;
+    padding: 1em;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.logo{
+    display: inline;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    padding: 1em;
+    margin-left: 40px;
+}
+.home-icon{
+    display: inline;
+    vertical-align: bottom;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    width: 93px;
+    height: 93px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    /*  For Grow Effect */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+ /*  For Grow Effect */
+.home-icon:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+.customer-logo-container{
+    padding: 1em;
+    width:auto;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+.customer-icon{
+    width: 93px;
+    height: 93px;
+    display: inline;
+    margin-right: 20px;
+    vertical-align: bottom;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+}
+.customer-nav-header{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+/*  Style Navbar Ends */
+
+/* Customer Section Style Start*/
+.customer-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 10%;
+    height: 80%;
+    width: 100%;    
+    padding: 1em;
+
+}
+/*      Filter Section   Start */
+.filter-section{
+    width: 20%;
+    min-height: 100%;
+    border: 2px solid #DCDCDC;
+    padding: 1em;
+    text-align: center;
+
+    /*  Shadow Effects  */
+    -webkit-box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+    -moz-box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+    box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+}
+/*      New Customer Button     */
+.new-customer-button{
+    display: inline-block;
+    width: 280px;
+    height: 90px;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #505050;
+    margin-bottom: 10%;
+
+}
+
+.new-customer-button a img{
+    width: 60px;
+    height: 60px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.new-customer-button a{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 1.375em;
+    font-weight: 600;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    margin-bottom: 10px;
+}
+
+.new-customer-button a:hover{
+    color: #FF69B4;
+
+}
+/*  Filter Container  Start  */
+.filter-container{
+    display: block;
+    padding: 1em;
+    min-width: 50%;
+    border: 2px solid #DCDCDC;
+    padding: 1em;
+    text-align: center;
+}
+.filter-heading{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.filter-heading img{
+    vertical-align: middle;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+}
+.filter-text{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #505050;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+    color: #505050;
+    font-size: 1.5em;
+    
+}
+.filter-input{
+    width: 280px;
+    height: 60px;
+    border: 2px solid #505050;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #FF69B4;
+}
+/*  Filter Container  End  */
+
+/*  Filter Section    End */
+
+/*  Custome Table Section Start */
+.customer-table-container{
+    width: 78%;
+    border: 2px solid #DCDCDC;
+    padding: 1em;
+    margin-left: 20px;
+
+    /*  Shadow Effects  */
+    -webkit-box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+    -moz-box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+    box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+}
+table{
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+thead{
+    background-color: #505050;
+    color: #ffffff;
+    width: 100%;
+    font-size: 1.4em;
+}
+th{
+    text-align: left;
+    padding: 10px 10px;
+    color: #FFF;
+    background-color: #505050;
+}
+tbody tr{
+    height: 10.3em;
+    /* White Space Between Rows */
+
+    text-align: justify;
+}
+
+td{
+    font-size: 1.3em;
+    text-align: left;
+    padding-left: 0.4em;
+    line-height: 1.6;
+}
+table tr:nth-child(even){
+    background-color: rgb(80, 80, 80, 0.8);
+    color: #FFF;
+}
+
+/*  Adjust Row Widths   */
+.id{
+    width: 5%;
+}
+.name{
+    width: 9%;
+}
+.cell{
+    width: 20%;
+}
+.address{
+    width: 20%;
+}
+.pet-name{
+    width: 12%;
+}
+.breed{
+    width: 20%;
+}
+.last-appointment{
+    width: 10%;
+    text-align: center;
+}
+.num-appointments{
+    width: 3%;
+    
+}
+/* Action Buttons */
+.edit-icon, .delete-icon{
+    width: 64px;
+    height: 64px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    background: transparent;
+    
+    /*  For Grow Effect */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+ /*  For Grow Effect */
+.edit-icon:hover, .delete-icon:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+/*  Customer Table Section Start */
+
+/*  Customer Section End    */
+
+/* Footer Section */
+.footer{
+    width: auto;
+    max-height: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #FF69B4;
+    padding: 0.5em;
+}
+
+
+/*  Media Queries */
+
+/*  Smaller Desktop*/
+@media screen and (max-width: 1680px) {
+
+}
+
+/*  Laptop */
+@media screen and (max-width: 1440px) {
+
+}
+@media screen and (max-width: 1300px){
+
+
+}
+/*  Laptops/Tablets */
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1000px) {
+
+}
+/* Medium ~ Small Devices */
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+}
