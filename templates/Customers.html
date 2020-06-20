@@ -8,7 +8,7 @@
     <!--    Styles      -->
     <link rel="stylesheet" href="/static/css/styles-all.css">
     <link rel="stylesheet" href="/static/css/customers.css">
-    <link rel="stylesheet" href="/static/css/customerEditModal.css">
+    <link rel="stylesheet" href="/static/css/customerModals.css">
     <!--    Font Awesome    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -100,6 +100,8 @@
             </div> 
             <!--    Customer Table Section Ends   -->
         </div>
+
+
         <!--    Customer Details Modal (User Clicks On Edit)    -->
         <div class="customer-details-modal" id="customer-details-modal">
             <div id="customer-details-modal-content" class="customer-details-modal-content">
@@ -158,10 +160,16 @@
                          </div>
                     </form>
                 </div>
-
             </div>
-
         </div>
+
+    <!--  Customer  Delete Modal    -->
+    <div class="delete-modal" id="delete-modal">
+        <h3> Confrim Delete of Lelanie Snyman</h3>
+        <button id="customer-delete-cancel"> Cancel </button>
+        <button id="customer-delete-confirm"> Confirm </button>
+    </div>
+
 
 
         <div class="footer">Pet Grooming &copy; 2020</div>

@@ -1,5 +1,4 @@
-/* Open Modal   */
-
+// Customer Edit Modal
 // Get the modal
 var modal = document.getElementById("customer-details-modal");
 
@@ -14,7 +13,7 @@ button.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Close the Modal 
 closeModal.onclick = function() {
   modal.style.display = "none";
 }
@@ -53,4 +52,23 @@ function resetGenderFunction(){
 }
     
 
+//Delete Modal
+
+//Display Delete Modal
+// Get the modal
+var deleteModal  = document.getElementById("delete-modal");
+
+// Get the button that opens the modal
+var openDeleteModal = document.getElementById("delete-button");
+
+//Get the close modal button
+var closeDeleteModal = document.getElementById("customer-delete-cancel");
+
+// When the user clicks the button, open the modal 
+openDeleteModal.onclick = function() {
+  deleteModal.style.display = "block";
+}
+closeDeleteModal.onclick = function() {
+  deleteModal.style.display = "none";
+}
 
