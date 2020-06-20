@@ -8,6 +8,7 @@
     <!--    Styles      -->
     <link rel="stylesheet" href="/static/css/styles-all.css">
     <link rel="stylesheet" href="/static/css/customers.css">
+    <link rel="stylesheet" href="/static/css/customerEditModal.css">
     <!--    Font Awesome    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -109,21 +110,22 @@
                             <img src="/static/Icons/petOwner.png" alt="petOwner" class="pet-owner-icon">
                             <h3 class="customer-details-heading">Customer Details</h3>
                     </div>
-                    <!--    Customer Details Content    -->
-                    <div class="customer-details-input-container">
+
+                    <form class="customer-details-input-container">
+                        <!--    Customer Details Content    -->
                         <label for="customer-name-input" class="customer-label">Name</label><br>
                         <input type="text" id="customer-name-input" class="customer-input"><br><br>
                         <label for="customer-cell-input" class="customer-label">Cell</label><br>
                         <input type="text" id="customer-cell-input" class="customer-input"><br><br>
                         <label for="customer-address-input" class="customer-label">Address</label><br>
                         <input type="text" id="customer-address-input" class="customer-address-input"><br><br>
-                    </div>
-                    <!--    Buttons     -->
-                    <div class="button-container">
+
+                        <!--    Buttons     -->
+                        <div class="button-container customer-button-container">
                         <div class="buttons"><a href="#" id="close-button"><img src="/static/Icons/cancelSmall.png" alt="close" class="button-icon">Close</a> </div> 
                         <div class="buttons"><img src="/static/Icons/save.png" alt="save" class="button-icon" id="save-customer-details">Save</div>
                     </div>
-
+                    </form>
                 </div>
 
                 <div id="modal-pet-details" class="modal-pet-details">
@@ -132,25 +134,29 @@
                         <h3 class="pet-details-heading">Pet Details</h3>
                     </div>
                     <!--    Customer Details Content    -->
-                    <div class="pet-details-input-container">
+                    <form class="pet-details-input-container" id="pet-details-input-container">
+                        <select id="pet" name="pet" class="pet-select">
+                            <option value="select">Select Pet</option>
+                            <option value="jackRusselTerrier">Mila</option>
+                        </select><br><br>
                         <label for="pet-name-input" class="pet-label">Name</label><br>
-                        <input type="text" id="pet-name-input" class="pet-input"><br><br>
+                        <input type="text" id="pet-name-input" class="pet-input" onkeypress="resetNameFunction()" autocomplete="off"><br><br>
                         <label class="pet-label" id="gender-label">Gender</label> &nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" id="m-option" name="selector">
+                        <input type="radio" id="m-option" name="selector" onclick="resetGenderFunction()">
                         <label class="pet-label-radio" id="gender-male-label" for="m-option">M</label>&nbsp;
-                        <input type="radio" id="f-option" name="selector">
+                        <input type="radio" id="f-option" name="selector" onclick="resetGenderFunction()">
                         <label class="pet-label-radio" id="gender-female-label" for="f-option">F</label><br><br>
                         <label for="pet-breed-input" class="pet-label">Breed</label><br>
-                        <input type="text" id="pet-input-breed" class="pet-input"><br><br>
+                        <input type="text" id="pet-input-breed" class="pet-input"  onkeypress="resetBreedFunction()"><br><br>
                         <label for="pet-notes-input" class="pet-label">Notes</label><br>
-                        <input type="text" id="pet-notes-input" class="pet-input"><br><br>
-                    </div>
-                    <!--    Buttons     -->
-                    <div class="button-container">
-                        <div class="buttons"><img src="/static/Icons/save.png" alt="save" class="button-icon" id="save-pet-button">Save</div>
-                        <div class="buttons"><img src="/static/Icons/plusCircleFill.jpg" alt="New Pet" class="button-icon" id="new-pet-button">New Pet</div> 
+                        <input type="text" id="pet-notes-input" class="pet-input" autocomplete="off"><br><br>
+                        <!--    Buttons     -->
+                        <div class="button-container">
+                        <div class="buttons"> <a href="#" id="save-pet">  <img src="/static/Icons/save.png" alt="save" class="button-icon" id="save-pet-button"> Save</a></div>
+                        <div class="buttons"><a href="javascript:document.getElementById('pet-details-input-container').reset();" onclick="addPetFunction()" id="new-pet"><img src="/static/Icons/plusCircleFill.jpg" alt="New Pet" class="button-icon" id="new-pet-button">New Pet</a></div>
                         <div class="buttons"><img src="/static/Icons/deleteSmall.png" alt="close" class="button-icon" id="delete-pet-button">Delete</div> 
-                    </div>
+                         </div>
+                    </form>
                 </div>
 
             </div>
