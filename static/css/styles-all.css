@@ -21,71 +21,68 @@
             Pink: #FF69B4
 
 */
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #ffffff;
-    min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-container{
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #505050;
-    color: #ffffff;
+.navbar-container {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #505050;
+  color: #ffffff;
 }
 
-h1{
-    font-family: 'Roboto Bold', sans-serif;
-    font-size: 1.8em;
-    color: #FF69B4;
+h1 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 1.8em;
+  color: #ff69b4;
 }
 
-footer{
-    text-align: center;
-    max-height: 50px;
-    
+footer {
+  text-align: center;
+  max-height: 50px;
 }
 
 /*  Media Queries */
 
 /*  Smaller Desktop*/
 @media screen and (max-width: 1680px) {
-
 }
 
 /*  Laptop */
 @media screen and (max-width: 1440px) {
-    h1{
-        font-size: 1.4em;
-    }
+  h1 {
+    font-size: 1.4em;
+  }
 }
 
 /*  Laptops/Tablets */
 @media screen and (max-width: 1200px) {
-    h1{
-        font-size: 1.28em;
-    }
+  h1 {
+    font-size: 1.28em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    h1{
-        font-size: 1.25em;
-    }
-
+  h1 {
+    font-size: 1.25em;
+  }
 }
 
 /* Medium Devices */
 @media screen and (max-width: 768px) {
-
 }
 
 /*  Small Devices */
 @media screen and (max-width: 620px) {
-        
 }

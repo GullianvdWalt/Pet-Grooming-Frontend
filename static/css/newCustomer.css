@@ -1,0 +1,441 @@
+/*      Styles For New Customer       */
+
+/* The styles in this CSS file are the general styles which appliet to all pages*/
+
+/*
+    Fonts
+
+    Import Fonts:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*
+    For Applying Fonts: 
+                            font-family: 'Montserrat', sans-serif;
+                            font-family: 'Roboto', sans-serif;
+                            font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+    colors:
+            Body Background: #ffffff
+            Background nav: #505050
+            Pink: #FF69B4
+
+    Shadow Effects:
+                        Text  - standard -  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+                              - hard shadow - text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
+                              - heavy shadow - text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                                                            0px 8px 13px rgba(0,0,0,0.1),
+                                                            0px 18px 23px rgba(0,0,0,0.1);  
+
+                        Box Shadow :    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+                        Icons:
+                                -
+                    
+*/
+
+/*  Main Page Container */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/*  Style Navbar Starts  */
+.navbar-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+.logo-container {
+  display: inline-block;
+  padding-left: 1.5em;
+  width: auto;
+  padding: 1em;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.logo {
+  display: inline;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  padding: 1em;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.home-icon {
+  display: inline;
+  vertical-align: bottom;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  width: 93px;
+  height: 93px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  /*  For Grow Effect */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+/*  For Grow Effect */
+.home-icon:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.customer-logo-container {
+  padding: 1em;
+  width: auto;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+.customer-icon {
+  width: 93px;
+  height: 93px;
+  display: inline;
+  margin-right: 20px;
+  vertical-align: bottom;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+.customer-nav-header {
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+/*  Style Navbar Ends */
+
+/* Customer Details Section Style Start */
+.customer-details-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding: 1em;
+  margin: 2% auto;
+  border: 2px solid #dcdcdc;
+  /*  Shadow Effects  */
+  -webkit-box-shadow: 0px -2px 5px -1px rgba(80, 80, 80, 0.46);
+  -moz-box-shadow: 0px -2px 5px -1px rgba(80, 80, 80, 0.46);
+  box-shadow: 0px -2px 5px -1px rgba(80, 80, 80, 0.46);
+}
+
+/*  Heading container   */
+.heading {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 2%;
+  height: 20%;
+}
+.heading img {
+  margin-right: 5px;
+}
+.pet-owner-icon {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  max-width: 95px;
+  max-height: 95px;
+  min-width: 45px;
+  min-height: 45px;
+  margin-right: 20px;
+}
+/*  Text of Heaidng */
+.customer-details-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #505050;
+}
+/*  Customer Details Form Section Start */
+.customer-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+}
+.customer-details-input-container {
+  width: 100%;
+  height: 55%;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 5%;
+}
+.customer-input {
+  font-size: 1.4em;
+  width: 45%;
+  color: #ff69b4;
+  margin: 0.5em;
+  border: 2px solid #505050;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+.customer-address-input {
+  font-size: 1.7em;
+  width: 50%;
+  color: #ff69b4;
+  font-weight: 200;
+  margin: 0.5em;
+  border: 2px solid #505050;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+/*  Customer Details Form Section Ends */
+
+/*  Buttons Style Starts */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40%;
+  padding: 1em;
+  margin-top: 5%;
+}
+.buttons {
+  background-color: #505050;
+  width: 30%;
+  height: 44%;
+  border-radius: 15px;
+  margin-top: 1%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  cursor: pointer;
+}
+#save-customer-details {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  max-width: 75px;
+  max-height: 75px;
+}
+#save-customer-details img {
+  min-width: 45px;
+  min-height: 45px;
+}
+#new-customer-back-button {
+  width: 30%;
+  height: 44%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+.buttons img {
+  width: 30%;
+  height: auto;
+}
+#save-customer-details:hover {
+  color: #ff69b4;
+}
+.button-icon {
+  vertical-align: middle;
+  margin-right: 8%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+/* Back Button */
+.back-button img {
+  width: 45%;
+  height: 45%;
+  max-width: 70px;
+  max-height: 70px;
+  min-width: 45px;
+  min-height: 45px;
+}
+/*  Buttons Style Ends */
+/*  Customer Details Section End    */
+
+/* Footer Section */
+.footer {
+  width: auto;
+  max-height: 50px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  color: #ff69b4;
+  padding: 0.5em;
+}
+
+/*  Media Queries */
+
+/*  Smaller Desktop*/
+@media screen and (max-width: 1606px) {
+}
+
+/*  Laptop */
+@media screen and (max-width: 1510px) {
+  /* Nav Bar*/
+  .home-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .logo {
+    font-size: 1.6em;
+  }
+  .customer-icon {
+    width: 75px;
+    height: 75px;
+  }
+  .customer-nav-header {
+    font-size: 1.7em;
+  }
+
+  .customer-details-section {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1370px) {
+  /* Nav Bar*/
+  .home-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .logo {
+    font-size: 1.6em;
+  }
+  .customer-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .customer-nav-header {
+    font-size: 1.6em;
+  }
+}
+/*  Laptops/Tablets */
+@media screen and (max-width: 1310px) {
+  .navbar-container {
+    display: inline-flexbox;
+  }
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+  }
+  .customer-logo-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+  }
+
+  .customer-logo-container h2 {
+    padding: 5%;
+  }
+  .customer-logo-container img {
+    margin-left: 10%;
+  }
+  .customer-section {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .home-icon {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 1262px) {
+  .customer-details-section {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1090px) {
+  /* Nav Bar*/
+  .home-icon {
+    width: 60px;
+    height: 60px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .customer-details-section {
+    width: 80%;
+  }
+  .customer-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /*  Navbar  */
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo-container {
+    display: block;
+    padding-left: 0;
+    width: auto;
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 0px;
+  }
+  .logo {
+    display: block;
+    padding: 0;
+    margin-left: 0px;
+    font-size: 30px;
+    font-size: 1.3em;
+  }
+  .home-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  .customer-logo-container {
+    padding: 0;
+    width: auto;
+    margin-right: 0;
+  }
+  .customer-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .customer-nav-header {
+    display: block;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    margin-left: 0;
+  }
+  .customer-details-section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Navbar   */
+
+  .logo-container {
+    margin-top: 3%;
+    width: 60%;
+    height: 100%;
+    padding: 0.5em;
+    text-align: left;
+    line-height: 30px;
+  }
+  .customer-logo-container {
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+  }
+  .customer-details-heading {
+    width: 100%;
+  }
+}

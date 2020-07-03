@@ -116,6 +116,14 @@
 }
 /*  Style Navbar Ends */
 
+/* Style Select Customer Start*/
+.customer-select-heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1vw;
+}
+
 /* Customer Section Style Start*/
 .customer-section {
   display: flex;
@@ -245,7 +253,7 @@ thead {
   font-size: 1.4em;
 }
 th {
-  text-align: left;
+  text-align: center;
   padding: 10px 10px;
   color: #fff;
   background-color: #505050;
@@ -254,12 +262,12 @@ tbody tr {
   height: 10.3em;
   /* White Space Between Rows */
 
-  text-align: justify;
+  text-align: center;
 }
 
 td {
   font-size: 1.3em;
-  text-align: left;
+  text-align: center;
   padding-left: 0.4em;
   line-height: 1.6;
 }
@@ -267,8 +275,33 @@ table tr:nth-child(even) {
   background-color: rgb(80, 80, 80, 0.8);
   color: #fff;
 }
-#edit-button {
+/*  Checkbox */
+.checkbox {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  -webkit-appearance: none;
+  outline: none;
+  transition: 0.5s;
+  padding-left: 5px;
   cursor: pointer;
+}
+.checkbox:before {
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ff69b4;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.checkbox:checked:before {
+  border-left: none;
+  border-top: none;
+  width: 20px;
+  border-color: #ff69b4;
+  transform: rotate(45deg);
 }
 /*  Adjust Row Widths   */
 .id {

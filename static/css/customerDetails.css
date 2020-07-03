@@ -38,7 +38,7 @@
 /*  Customer Details Modal  */
 /* Main Container of Modal  */
 .customer-details-modal{
-    display: block;
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -182,5 +182,34 @@ input[type=radio]{
 .button-icon{
     vertical-align: middle;
     margin-right: 8%;
-     filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+}
+
+
+/*  Delete Modal*/
+.delete-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 30%;
+    height: 20%;
+    margin: 10% 35%; 
+    padding: 1em;
+    background-color: white;
+    overflow: hidden;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4)); 
+    text-align: center;
+}
+.delete-modal h3, .delete-modal button{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    margin-top: 5%;
+    
+}
+.delete-modal button{
+    cursor: pointer;
+    margin: 1em;
+}
+.delete-modal button:hover{
+ color: #FF69B4;
 }

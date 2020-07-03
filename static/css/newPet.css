@@ -1,0 +1,281 @@
+/*      Styles For New Pept       */
+
+/* Customer Details Section Style Start */
+.pet-details-section{
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;    
+    padding: 1em;
+    margin: 2% 20%;
+    border: 2px solid #DCDCDC;
+        /*  Shadow Effects  */
+    -webkit-box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+    -moz-box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+    box-shadow: 0px -2px 5px -1px rgba(80,80,80,0.46);
+}
+
+/*  Pet Details Heading  */
+/* Pet Details Heading Container*/
+.heading{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1em;
+    margin: 1% 25%;
+    height: 20%;
+    
+}
+/* Paw icon */
+.pet-paw-icon{
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    width: 95px;
+    height: 95px;
+}
+
+/*  Pet Details h3 Heading Text */
+.pet-details-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #505050;
+}
+
+/*  Pet Details Form Section Start */
+/* Form Container */
+.pet-details-input-container{
+    width: 100%;
+    height: 55%;
+    text-align: center;
+    padding: 0.5em;   
+    margin-bottom: 5%;
+}
+/* Label Styles */
+.pet-label{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4em;
+}
+/* Input Boxes  */
+.pet-input, .pet-select{
+    font-size: 1.4em;
+    width: 30%;
+    color: #FF69B4;
+    margin: 2% 35%;
+    border: 2px solid #505050;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+/* Notes Input */
+#pet-notes-input{
+    font-size: 1.7em;
+    width: 50%;
+    font-weight: 200;
+    margin: 0.5em;
+    border: 2px solid #505050;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+
+}
+/*  Buttons Style Starts */
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40%;
+}
+.buttons{
+    background-color: #505050;
+    width: 25%;
+    height: 44%;
+    border-radius: 15px;
+    margin: 1% 2%;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 1.5em;
+    padding: 0.5em;
+    text-align: center;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    cursor: pointer;
+
+}
+#save-pet, #new-pet{
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1em;
+}
+#new-pet-back-button{
+    width: 30%;
+    height: 44%;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+}
+.buttons img{
+    width: 25%;
+    height: auto;
+}
+#save-pet:hover, #new-pet:hover{
+    color: #FF69B4;
+}
+.button-icon{
+    vertical-align: middle;
+    margin-right: 8%;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+}
+/*  Buttons Style Ends */
+/*  Customer Details Form Section Ends */
+
+
+/* Footer Section */
+.footer{
+    width: auto;
+    max-height: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #FF69B4;
+    padding: 0.5em;
+}
+
+
+/*  Media Queries */
+
+/*  Smaller Desktop*/
+@media screen and (max-width: 1606px) {
+
+}
+
+/*  Laptop */
+@media screen and (max-width: 1500px) {
+
+    /* Nav Bar*/
+    .home-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .logo{
+        font-size: 1.6em;
+    }
+    .customer-icon{
+        width: 75px;
+        height: 75px;
+    }
+    .customer-nav-header{
+        font-size: 1.7em;
+    }
+
+}
+@media screen and (max-width: 1370px){
+    /* Nav Bar*/
+    .home-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .logo{
+        font-size: 1.6em;
+    }
+    .customer-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .customer-nav-header{
+        font-size: 1.6em;
+    }
+
+}
+/*  Laptops/Tablets */
+@media screen and (max-width: 1310px) {
+    .customer-section{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1811px) {
+
+}
+@media screen and (max-width: 1090px) {
+    /* Nav Bar*/
+    .home-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+    .customer-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .customer-nav-header{
+        font-size: 1.4em;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    /*  Navbar  */
+    .navbar-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .logo-container{
+        display: block;
+        padding-left: 0;
+        width: auto;
+        padding: 0;
+        margin-top: 2%;
+        margin-left: 0px;
+    }
+    .logo{
+        display: block;
+        padding: 0;
+        margin-left: 0px;
+        font-size: 30px;
+        font-size: 1.3em;
+    }
+    .home-icon{
+        display: block;
+        width: 50px;
+        height: 50px;
+        
+    }
+    .customer-logo-container{
+        padding: 0;
+        width:auto;
+        margin-right: 0;
+
+    }
+    .customer-icon{
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .customer-nav-header{
+        display: block;
+        font-size: 1.3em;
+        letter-spacing: 3px;
+        margin-left: 0;
+    }    
+
+}
+
+@media screen and (max-width: 500px) {
+    /* Navbar   */
+    .logo-container{
+        margin-top: 3%;
+        width: 35%;
+        text-align: left;
+        line-height: 30px;
+    }
+    .home-icon{
+        margin-left: 25%;
+    }
+    .customer-icon{
+        margin-left: 25%;
+    }
+
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customers</title>
+
+    <!--    Styles      -->
+    <link rel="stylesheet" href="/static/css/styles-all.css" />
+    <link rel="stylesheet" href="/static/css/customerSelect.css" />
+    <link rel="stylesheet" href="/static/css/customerModals.css" />
+    <!--    Font Awesome    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--    Navbar      -->
+      <div class="navbar-container">
+        <div class="logo-container">
+          <a href="Dashboard.html"
+            ><img src="/static/Icons/dogHouse.png" alt="home" class="home-icon"
+          /></a>
+          <h1 class="logo">@Home Mobile Pet Grooming</h1>
+        </div>
+
+        <div class="customer-logo-container">
+          <img src="/static/Icons/dog.jpg" alt="customer" class="customer-icon" />
+          <h2 class="customer-nav-header">Customers</h2>
+        </div>
+      </div>
+      <!--    Navbar Ends  -->
+      <div class="customer-select-heading"><h2>Select Customer</h2></div>
+      <!--    Customer Section Starts    -->
+      <div class="customer-section">
+        <!--    Filter Section Starts   -->
+        <div class="filter-section">
+          <div class="new-customer-button">
+            <a href="/templates/NewCustomer.html" class="newCustomer"
+              ><img
+                src="/static/Icons/plusCircle.jpg"
+                alt="add-customer"
+                class="add-customer-icon"
+              />New Customer</a
+            >
+          </div>
+
+          <div class="filter-container">
+            <div class="filter-heading">
+              <img src="/static/Icons/filter.png" alt="filter" />
+              <h3 class="filter-text">Filter</h3>
+            </div>
+            <div class="filter-input-container">
+              <div>
+                <label for="owner-name-input">Owner Name</label><br />
+                <input type="text" name="owner-name" id="owner-name-input" class="filter-input" />
+              </div>
+              <div>
+                <label for="pet-breed-input">Pet Breed</label><br />
+                <input type="text" name="owner-name" id="pet-breed-input" class="filter-input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--    Filter Section Ends     -->
+
+        <!--    Customer Table Section Starts   -->
+        <div class="customer-table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Cell</th>
+                <th>Address</th>
+                <th>Pet Name</th>
+                <th>Pet Breed</th>
+                <th>Last Appointment</th>
+                <th>Number of Appointments</th>
+                <th colspan="2">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="id">001</td>
+                <td class="name">Lelanie Snyman</td>
+                <td class="cell">083-750-8818</td>
+                <td class="address">145 Breed Street Sasolburg</td>
+                <td class="pet-name">
+                  Buddy, <br />
+                  Lady, <br />
+                  Mila
+                </td>
+                <td class="breed">
+                  Airdale Terrier, <br />
+                  Airdale Terrier, <br />
+                  Wirehead Foxterrier
+                </td>
+                <td class="last-appointment">04-12-2019</td>
+                <td class="num-appointments">5</td>
+                <td class="checkbox-column">
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="" class="checkbox" data-tip="" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="id">001</td>
+                <td class="name">Lelanie Snyman</td>
+                <td class="cell">083-750-8818</td>
+                <td class="address">145 Breed Street Sasolburg</td>
+                <td class="pet-name">
+                  Buddy, <br />
+                  Lady, <br />
+                  Mila
+                </td>
+                <td class="breed">
+                  Airdale Terrier, <br />
+                  Airdale Terrier, <br />
+                  Wirehead Foxterrier
+                </td>
+                <td class="last-appointment">04-12-2019</td>
+                <td class="num-appointments">5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--    Customer Table Section Ends   -->
+      </div>
+
+      <div class="footer">Pet Grooming &copy; 2020</div>
+    </div>
+    <!--   Scripts     -->
+    <script src="/static/js/customer.js"></script>
+  </body>
+</html>
