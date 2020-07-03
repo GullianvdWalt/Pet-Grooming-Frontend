@@ -1,0 +1,365 @@
+/*      Styles For New Customer       */
+
+/* The styles in this CSS file are the general styles which appliet to all pages*/
+
+/*
+    Fonts
+
+    Import Fonts:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*
+    For Applying Fonts: 
+                            font-family: 'Montserrat', sans-serif;
+                            font-family: 'Roboto', sans-serif;
+                            font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+    colors:
+            Body Background: #ffffff
+            Background nav: #505050
+            Pink: #FF69B4
+
+    Shadow Effects:
+                        Text  - standard -  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+                              - hard shadow - text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
+                              - heavy shadow - text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                                                            0px 8px 13px rgba(0,0,0,0.1),
+                                                            0px 18px 23px rgba(0,0,0,0.1);  
+
+                        Box Shadow :    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+                        Icons:
+                                -
+                    
+*/
+
+/*  Main Page Container */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*  Style Navbar Starts  */
+.navbar-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+.logo-container {
+  display: inline-block;
+  padding-left: 1.5em;
+  width: auto;
+  padding: 1em;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.logo {
+  display: inline;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  padding: 1em;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.home-icon {
+  display: inline;
+  vertical-align: bottom;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  width: 93px;
+  height: 93px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  /*  For Grow Effect */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+/*  For Grow Effect */
+.home-icon:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* Appointment Logo Container */
+.new-appointment-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 35%;
+  margin-top: 2rem;
+  margin-right: 4rem;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+/* Appointment Logo Icon */
+.new-appointment-icon {
+  width: 75px;
+  height: 75px;
+  vertical-align: middle;
+  margin-right: 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+/* Style Navbar Ends */
+/* Appointment Details Section Style Starts */
+.appointment-details-section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+/* Appointment Details Section Header Styles */
+.header {
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+/*Appointment Details Section Container Styles Starts*/
+.appointment-details-section-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+/* Date-Time & Customer Details Containers */
+.appointment-date-container,
+.customer-details-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 2px solid #c4c4c4;
+  margin: 0.6rem;
+  padding: 1rem;
+}
+/* Date Container */
+/* Date Container - Heaidng */
+.date-time-heading,
+.customer-details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.date-time-heading img,
+.customer-details-header img {
+  width: 75px;
+  height: 75px;
+}
+.date-time-heading h3,
+.customer-details-header h3 {
+  margin-left: 0.5rem;
+}
+/* Date Container - Input Elements */
+.date-container,
+.time-container {
+  width: 100%;
+  height: 35%;
+}
+/* Style Date & Time Labels */
+.date-container label,
+.time-container label {
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+/* Style Date & Time Inputs */
+.date-container input,
+.time-container input {
+  height: 30px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+/* Style Input Boxes When User Click To Type*/
+#date-input:focus,
+#time-input-start:focus,
+.time-input-end:focus {
+  background-color: rgb(255, 105, 180, 0.8);
+  font-weight: bold;
+}
+.date-container input {
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+.time-container input {
+  width: 120px;
+  margin-bottom: 2rem;
+}
+/* Dash Inbetween Time Input Boxes */
+.dash {
+  margin-left: 0;
+}
+/* Style Customer Details Container */
+.customer-details {
+  width: 100%;
+  height: 35%;
+  text-align: left;
+}
+/* Style Customer Details Input Labels */
+.customer-details label {
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+#cell-input {
+  margin-left: 5rem;
+}
+/* Style Customer Details Container - Input Boxes */
+.customer-details input {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+.customer-details input:focus {
+  background-color: rgb(255, 105, 180, 0.8);
+  font-weight: bold;
+}
+/* Style Services Table Container */
+.services-container {
+  width: 99%;
+  margin: 0.5rem;
+
+  text-align: center;
+  border: 2px solid #c4c4c4;
+}
+/* Style The Services Table */
+table {
+  overflow: hidden;
+}
+table {
+  width: 100%;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+table tr {
+  margin-top: 0.5rem;
+}
+/* Heading of Table */
+
+/* Text */
+.service-table-heading {
+  padding: 0.5rem;
+}
+th div {
+  margin-bottom: 0.5rem;
+}
+/* Icons */
+.service-table-heading img {
+  max-width: 55px;
+  max-height: 55px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+/*  Checkbox */
+.checkbox {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  -webkit-appearance: none;
+  outline: none;
+  transition: 0.5s;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.checkbox:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ff69b4;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.checkbox:checked:before {
+  border-left: none;
+  border-top: none;
+  width: 20px;
+  border-color: #ff69b4;
+  transform: rotate(45deg);
+}
+/* Appointment Details Section Style Ends */
+/* Button Container Styles Starts */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.cancel-button {
+  width: 170px;
+  height: 70px;
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: #505050;
+  margin-left: 8rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-align: center;
+}
+.save-button {
+  width: 170px;
+  height: 70px;
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: #505050;
+  margin-right: 15rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-align: center;
+}
+.save-button:hover,
+.cancel-button:hover {
+  cursor: pointer;
+  color: #ff69b4;
+}
+.save-button img,
+.cancel-button img {
+  width: 55px;
+  height: 55px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+/* Button Container Styles Ends */
+/* Footer Section */
+.footer {
+  width: auto;
+  max-height: 50px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  color: #ff69b4;
+  padding: 0.5em;
+  overflow: hidden;
+}
