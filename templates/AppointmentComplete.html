@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Complete</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/styles-all.css">
+    <link rel="stylesheet" href="/static/css/appointmentComplete.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--    Navbar Starts     -->
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="Dashboard.html"><img src="/static/Icons/dogHouse.png" alt="home" class="home-icon" /></a>
+                <h1 class="logo">@Home Mobile Pet Grooming</h1>
+            </div>
+
+            <div class="appointment-complete-logo-container">
+                <img src="/static/Icons/servicesSmall.png" alt="appointment-complete"
+                    class="appointment-complete-icon" />
+                <h2 class="appointment-complete-nav-headeing">Appointment Complete</h2>
+            </div>
+        </div>
+        <!--    Navbar Ends  -->
+        <!-- Appointment Details Section Starts -->
+        <div class="appointment-details-section">
+            <div class="appointment-details-header">
+                <h2 class="appointment-details-heading"> Appointment Details</h2>
+            </div>
+            <!-- Appointment Details Section Container Starts -->
+            <div class="appointment-details-section-container">
+                <div class="appointment-details-container">
+                    <div class="date-time-container">
+                        <div class="date-container">
+                            <label for="date-input"> Date </label>
+                            <input type="text" id="date-input" />
+                        </div>
+                        <div class="time-container">
+                            <label for="time-input-start">Time</label>
+                            <input type="text" id="time-input-start" />
+                            <label for="time-input-end" class="dash">&ndash;</label>
+                            <input type="text" id="time-input-end" />
+                        </div>
+                    </div>
+                    <div class="customer-details-container">
+                        <div class="customer-name-container">
+                            <label for="customer-fullname-input">Customer Name</label>
+                            <input type="text" id="customer-fullname-input" />
+                        </div>
+                        <div class="customer-cell-container">
+                            <label for="cell-input" class="cell-label">Cell</label>
+                            <input type="text" id="cell-input" />
+                        </div>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <table>
+                        <tr>
+                            <td>Buddy (Airdale Terrier)</td>
+                            <td>Nail Cut, Bath & Dip</td>
+                            <td>R170</td>
+                        </tr>
+                        <tr>
+                            <td>Buddy (Airdale Terrier)</td>
+                            <td>Nail Cut, Bath & Dip</td>
+                            <td>R170</td>
+                        </tr>
+                        <tr>
+                            <td>Buddy (Airdale Terrier)</td>
+                            <td>Nail Cut, Bath & Dip</td>
+                            <td>R170</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <!-- Appointment Details Section Container Ends -->
+        </div>
+        <!-- Appointment Details Section Ends -->
+        <!-- Button Container Starts-->
+        <div class="button-container">
+            <div class="cancel-button"><a href="#"><img src="/static/Icons/cancelSmall.png" alt="cancel"> Cancel</a>
+            </div>
+            <div class="edit-button"><a href="#"><img src="/static/Icons/editSmall.png" alt="edit"> Edit </a></div>
+            <div class="invoice-button"><a href="#"><img src="/static/Icons/invoice2.png" alt="invoice"> Invoice</a>
+            </div>
+        </div>
+        <!-- Button Container Ends -->
+        <!-- Footer -->
+        <div class="footer">Pet Grooming &copy; 2020</div>
+    </div>
+</body>
+
+</html>
