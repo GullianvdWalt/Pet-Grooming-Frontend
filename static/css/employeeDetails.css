@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+.navbar-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+.logo-container {
+  display: inline-block;
+  padding-left: 1.5em;
+  width: auto;
+  padding: 1em;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.home-icon {
+  display: inline;
+  vertical-align: bottom;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  width: 93px;
+  height: 93px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  /*  For Grow Effect */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.logo {
+  display: inline;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  padding: 1em;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+/*  For Grow Effect */
+.home-icon:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Employee Logo Container */
+.employee-details-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 35%;
+  margin-top: 2rem;
+  margin-right: 4rem;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+/* Appointment Logo Icon */
+.employee-details-icon {
+  width: 75px;
+  height: 75px;
+  vertical-align: middle;
+  margin-right: 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.employee-details-section {
+  position: absolute;
+  width: 1676px;
+  height: 569px;
+  left: 57px;
+  top: 236px;
+
+  background: #FFFFFF;
+  border: 2px solid #DCDCDC;
+  box-sizing: border-box;
+}
+
+.employee-label {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  left: 245px;
+  top: 325px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #505050;
+}
+
+.employee-input {
+  position: absolute;
+  width: 268px;
+  height: 62px;
+  left: 512px;
+  top: 313px;
+
+  background: #FFFFFF;
+  border: 2px solid #C4C4C4;
+  box-sizing: border-box;
+}
+
+#employee-sa-id-label {
+	top: 461px;
+}
+
+#employee-sa-id {
+	top: 443px;
+}
