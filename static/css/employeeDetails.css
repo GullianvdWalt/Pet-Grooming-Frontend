@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
 .navbar-container {
   width: 100%;
   height: 10%;
@@ -90,8 +100,8 @@
   position: absolute;
   width: 205px;
   height: 39px;
-  left: 245px;
-  top: 325px;
+  left: 188px;
+  top: 89px;
 
   font-family: Montserrat;
   font-style: normal;
@@ -107,7 +117,7 @@
   width: 268px;
   height: 62px;
   left: 512px;
-  top: 313px;
+  top: 77px;
 
   background: #FFFFFF;
   border: 2px solid #C4C4C4;
@@ -115,32 +125,111 @@
 }
 
 #employee-sa-id-label {
-	top: 461px;
+	top: 225px;
 }
 
 #employee-sa-id {
-	top: 443px;
+	top: 207px;
 }
 
 #employee-name-label {
-	left: 1016px;
-    top: 325px;
+	left: 959px;
+    top: 89px;
 }
 
 #employee-name-input {
-	left: 1183px;
-    top: 313px;
+	left: 1126px;
+    top: 77px;
+}
+
+#employee-occupation-label {
+	left: 921px;
+    top: 233px;
+}
+
+#employee-occupation-input {
+	width: 463px;
+    height: 115px;
+    left: 1126px;
+    top: 219px;
+}
+
+.buttons-container {
+	width: 1920px;
+	height: 225px;
+	position: absolute;
 }
 
 .cancel-button {
-	position: absolute;
+    position: absolute;
     width: 245px;
     height: 81px;
     left: 219px;
     top: 852px;
+	padding-top: 27px;
 
     background: #505050;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+}
+
+.save-button {
+	position: absolute;
+    width: 245px;
+    height: 81px;
+    left: 1345px;
+    top: 852px;
+    padding-top: 27px;
+
+    background: #505050;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#cancel-image {
+	position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 26px;
+    top: 9px;
+}
+
+#cancel-label {
+	margin-left: 111px;
+	
+	font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+	text-decoration: none;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#save-image {
+	position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 26px;
+    top: 9px;
+}
+
+#save-label {
+	margin-left: 123px;
+	
+	font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

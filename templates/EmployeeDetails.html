@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Complete</title>
+    <title>Employee Details</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="C:\Users\Slade\Desktop\Pet-Grooming-Frontend\static\css\styles-all.css">
-    <link rel="stylesheet" href="C:\Users\Slade\Desktop\employeeDetails.css">
+    <link rel="stylesheet" href="\static\css\styles-all.css">
+    <link rel="stylesheet" href="\static\css\employeeDetails.css">
 </head>
 
 <body>
@@ -16,13 +16,12 @@
         <!--    Navbar Starts     -->
         <div class="navbar-container">
             <div class="logo-container">
-                <a href="Dashboard.html"><img src="C:\Users\Slade\Desktop\Pet-Grooming-Frontend\static\Icons\dogHouse.png" alt="home" class="home-icon" /></a>
+                <a href="Dashboard.html"><img src="\static\Icons\dogHouse.png" alt="home" class="home-icon" /></a>
                 <h1 class="logo">@Home Mobile Pet Grooming</h1>
             </div>
 
             <div class="employee-details-logo-container">
-                <img src="C:\Users\Slade\Desktop\Pet-Grooming-Frontend\static\Icons\employee.png" alt="employee-details"
-                    class="employee-details-icon" />
+                <img src="\static\Icons\employee.png" alt="employee-details" class="employee-details-icon" />
                 <h2 class="employee-details-nav-headeing">Employee Details</h2>
             </div>
         </div>
@@ -30,32 +29,43 @@
 		
         <!-- Employee Details Section Starts -->
         <div class="employee-details-section">
-		  <form>
-		    <label for="employee-id" class="employee-label" id="employee-id-label">Employee ID</label><br>
-		    <input type="text" id="employee-id" class="employee-input"><br><br>
+            <form>
+		        <label for="employee-id-input" class="employee-label" id="employee-id-label">Employee ID</label><br>
+		        <input type="text" id="employee-id-input" class="employee-input"><br><br>
 		  
-		    <label class="employee-label" id="employee-sa-id-label">SA ID Number</label><br>
-		    <input type="text" id="employee-sa-id" class="employee-input"><br><br>
+		        <label for="employee-sa-id" class="employee-label" id="employee-sa-id-label">SA ID Number</label><br>
+		        <input type="text" id="employee-sa-id" class="employee-input"><br><br>
 		  
-		    <label class="employee-label" id="employee-name-label">Name</label><br>
-		    <input type="text" id="employee-name-input" class="employee-input"><br><br>
+		        <label for="employee-name-input" class="employee-label" id="employee-name-label">Name</label><br>
+		        <input type="text" id="employee-name-input" class="employee-input"><br><br>
 		  
-		    <label for="employee-id" class="employee-label">Employee ID</label><br>
-		    <input type="text" id="employee-id-input" class="employee-input"><br><br>
-		  </form>
+		        <label for="employee-occupation-input" class="employee-label" id="employee-occupation-label">Employee ID</label><br>
+		        <input type="text" id="employee-occupation-input" class="employee-input"><br><br>
+		    </form>
         </div>    
         <!-- Employee Details Section Ends -->
 		
-        <!-- Buttons-->
-            <div class="cancel-button"><a href="#"><img src="C:\Users\Slade\Desktop\Pet-Grooming-Frontend\static\Icons\cancelSmall.png" alt="cancel"> Cancel </a></div>
-            <div class="save-button"><a href="#"><img src="C:\Users\Slade\Desktop\Pet-Grooming-Frontend\static\Icons\save.png" alt="save"> Save </a></div>
+        <!-- Button section start-->
+	    <div class="button-container">
+	        <a href="#" class="cancel-button">
+		        <img src="\static\Icons\cancelSmall.png" alt="cancel" id="cancel-image">
+			    <label for="cancel-button" id="cancel-label">Cancel</label>
+		    </a>
 		
-        <!-- Footer -->
-        <div class="footer">
-		  Pet Grooming &copy; 2020
-		</div>
+	        <a href="#" class="save-button">
+                <img src="\static\Icons\save.png" alt="save" id="save-image">
+			    <label for="save-button" id="save-label">Save</label>
+	        </a>
+	    </div>
+	    <!--Button Section end-->	
+	
+	</div><!--wrapper-->
+	
+	<!-- Footer -->
+    <div class="footer">
+	    Pet Grooming &copy; 2020
+	</div>
 		
-    </div>
 </body>
 
 </html>
