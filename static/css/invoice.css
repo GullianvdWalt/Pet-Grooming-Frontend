@@ -1,0 +1,275 @@
+/*      Styles For Invoice Page     */
+
+/*
+    Fonts
+
+    Import Fonts:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*
+    For Applying Fonts: 
+                            font-family: 'Montserrat', sans-serif;
+                            font-family: 'Roboto', sans-serif;
+                            font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+    colors:
+            Body Background: #ffffff
+            Background nav: #505050
+            Pink: #FF69B4
+
+    Shadow Effects:
+                        Text  - standard -  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+                              - hard shadow - text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
+                              - heavy shadow - text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                                                            0px 8px 13px rgba(0,0,0,0.1),
+                                                            0px 18px 23px rgba(0,0,0,0.1);  
+
+                        Box Shadow :    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+                        Icons:
+                                -
+                    
+*/
+
+/*  Main Page Container */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/*  Style Navbar Starts  */
+.navbar-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1.5em;
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1em;
+}
+.logo {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  margin-left: 10px;
+  font-size: 1.6rem;
+}
+.home-icon {
+  vertical-align: bottom;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  max-width: 93px;
+  max-height: 93px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  /*  For Grow Effect */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+/*  For Grow Effect */
+.home-icon:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.invoice-logo-container {
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.invoice-icon {
+  max-width: 85px;
+  max-height: 85px;
+  vertical-align: bottom;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+.invoice-nav-header {
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  letter-spacing: 3px;
+}
+/*  Style Navbar Ends */
+
+/* Style Main Section Start*/
+.main-section-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Invoice Container */
+.invoice-details-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+/* Invoice Two Columns */
+.invoice-container-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100%;
+  border: 2px solid #dcdcdc;
+  padding: 1em;
+  margin: 2rem;
+}
+/* Invoice Column Rows */
+.invoice-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0.5rem;
+  margin: 1rem 10%;
+}
+/* Invoice Note Row */
+.invoice-row-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  padding: 1rem;
+  margin: 1rem 10%;
+}
+/* Invoice Labels */
+.invoice-label,
+.invoice-data {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+.invoice-data-note {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  width: 80%;
+  height: 120px;
+}
+.discount-input {
+  font-size: 1.2rem;
+}
+.pay-method {
+  display: inline-flex;
+}
+.pay-method label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+/*  Invoice Payment Type Checkboxes */
+.checkbox {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  -webkit-appearance: none;
+  outline: none;
+  transition: 0.5s;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.checkbox:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ff69b4;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.checkbox:checked:before {
+  border-left: none;
+  border-top: none;
+  width: 20px;
+  border-color: #ff69b4;
+  transform: rotate(45deg);
+}
+/* Style Buttons */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 20%;
+  min-width: 70%;
+  margin: 1.4rem 15%;
+}
+/* Button Containers */
+.cancel-button-container,
+.save-button-container {
+  width: 245px;
+  height: 81px;
+  background: #505050;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  text-align: center;
+}
+/* Button Links (a) */
+.cancel-button,
+.save-button {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin-top: 10px;
+}
+.cancel-button:hover,
+.save-button:hover {
+  color: #ff69b4;
+}
+.cancel-button img,
+.save-button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/* Style Total Row */
+.invoice-row-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1rem 20%;
+  padding: 0.5rem;
+}
+.total-line {
+  width: 70%;
+  border: 2px solid #ff69b4;
+}
+/* Style Main Section End*/
+
+/* Style Footer Start*/
+.footer {
+  min-width: 100%;
+  min-height: 10%;
+  margin-top: 10%;
+  text-align: center;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #ff69b4;
+}
+
+/* Style Footer End*/
