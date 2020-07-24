@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This Is The Invoice Complete Page -->
+<!-- This page allows the user to preview the completed invoice before finilsing and sending to the pet owner -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Complete</title>
+    <!-- Window Icon -->
+    <link rel="icon" href="/static/Icons/icon.ico">
+    <!--    Styles      -->
+    <link rel="stylesheet" href="/static/css/styles-all.css" />
+    <link rel="stylesheet" href="/static/css/invoice.css">
+    <!--    Font Awesome    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--    Navbar Start  -->
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="Dashboard.html"><img src="/static/Icons/dogHouse.png" alt="home" class="home-icon" /></a>
+                <h1 class="logo">@Home Mobile Pet Grooming</h1>
+            </div>
+
+            <div class="invoice-logo-container">
+                <img src="/static/Icons/Invoice.png" alt="invoice" class="invoice-icon" />
+                <h2 class="invoice-nav-header">Invoice Complete</h2>
+            </div>
+        </div>
+        <!--    Navbar Ends  -->
+        <!-- Main Section Start -->
+        <div class="main-section-container">
+            <div class="invoice-complete-details-container">
+                <div class="invoice-complete-container-col">
+                    <div>
+                        <hr class="invoice-complete-row-line">
+                    </div>
+                    <div class="invoice-complete-row">
+                        <p class="invoice-complete-label">Invoice Number</p>
+                        <p class="invoice-complete-data" id="invoice-num"><b> 001 </b></p>
+                    </div>
+                    <div class="invoice-complete-row">
+                        <p class="invoice-complete-label">Date</p>
+                        <p class="invoice-complete-data" id="invoice-date"><b> 10-Nov-2020</b></p>
+                    </div>
+                    <div class="invoice-complete-row">
+                        <p class="invoice-complete-label">Customer Name</p>
+                        <p class="invoice-complete-data" id="invoice-customer-name"> <b>Sonja Van Der Merwe</b> </p>
+                    </div>
+                    <div class="invoice-complete-row">
+                        <p class="invoice-complete-label">Customer Cell</p>
+                        <p class="invoice-complete-data" id="invoice-customer-cell"> <b>084-5076-275</b> </p>
+                    </div>
+                    <div class="invoice-complete-row">
+                        <p class="invoice-complete-data" id="invoice-pet-name"> Buddy </p>
+                        <p class="invoice-complete-data" id="invoice-services"> <span>Nail Cut, Bath, & Dip</span> </p>
+                        <p class="invoice-complete-data" id="invoice-service-price"> <b>R 170.00</b></p>
+                    </div>
+                    <div class="invoice-complete-row">
+                        <p class="invoice-complete-label">Discount</p>
+                        <input type="text" name="discount" id="discount" class="discount-input">
+                    </div>
+                    <div>
+                        <hr class="total-line">
+                    </div>
+                    <div class="invoice-complete-row-total">
+                        <p class="invoice-data"> <b> Total </b> </p>
+                        <p class="invoice-data" id="invoice-total"><b>R 220.00</b></p>
+                    </div>
+                    <div>
+                        <hr class="total-line">
+                    </div>
+                    <div class="invoice-complete-row-note">
+                        <p class="invoice-note" id="invoiceNote">Thank You For Your Support</p>
+                    </div>
+                    <div>
+                        <hr class="invoice-complete-row-line">
+                    </div>
+                </div>
+                <div class="invoice-complete-container-col-right">
+                    <div class="invoice-complete-send-row">
+                        <input type="text" name="customer-cell" id="custCell" class="cell">
+                        <div class="sened-button-container">
+                            <a href="#" class="cancel-button">
+                                <img src="/static/Icons/sms.png" alt="send" class="send-button-icon">
+                                Send
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button section start-->
+        <div class="button-container">
+            <div class="cancel-button-container">
+                <a href="#" class="cancel-button">
+                    <img src="/static/Icons/cancelSmall.png" alt="cancel" id="cancel-image" class="cancel-button-icon">
+                    Cancel
+                </a>
+            </div>
+            <div class="edit-button-container">
+                <a href="#" class="edit-button">
+                    <img src="/static/Icons/editSmall.png" alt="edit" id="edit-button-icon"
+                        class="edit-button-icon">Edit
+                </a>
+            </div>
+            <div class="done-button-container">
+
+                <a href="#" class="done-button">
+                    <img src="/static/Icons/check.png" alt="done" id="done-button-icon" class="done-button-icon">Done
+                </a>
+            </div>
+
+        </div>
+        <!--Button Section end-->
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Pet Grooming &copy; 2020</div>
+    </div>
+    <!-- Main Wrapper Ends -->
+</body>
+
+</html>
