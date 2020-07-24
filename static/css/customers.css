@@ -51,30 +51,28 @@
   height: 10%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 2em;
+  justify-content: center;
+  padding: 1rem;
 }
 .logo-container {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   padding-left: 1.5em;
-  width: auto;
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 1em;
-  margin-top: 10px;
-  margin-left: 40px;
 }
 .logo {
-  display: inline;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
-  padding: 1em;
   margin-left: 10px;
-  font-size: 30px;
+  font-size: 1.6rem;
 }
 .home-icon {
-  display: inline;
   vertical-align: bottom;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
-  width: 93px;
-  height: 93px;
+  max-width: 93px;
+  max-height: 93px;
   margin-right: 20px;
   margin-left: 20px;
 
@@ -93,27 +91,28 @@
   transform: scale(1.1);
 }
 .customer-logo-container {
-  padding: 1em;
-  width: auto;
-  margin-right: 10%;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-top: 10px;
 }
 .customer-icon {
-  width: 93px;
-  height: 93px;
-  display: inline;
-  margin-right: 20px;
+  max-width: 85px;
+  max-height: 85px;
   vertical-align: bottom;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 }
 .customer-nav-header {
   display: inline;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.6rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
   letter-spacing: 3px;
-  margin-left: 20px;
 }
+
 /*  Style Navbar Ends */
 
 /* Customer Section Style Start*/
