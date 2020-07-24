@@ -324,16 +324,18 @@ table tr:nth-child(even) {
 /*  Customer Section End    */
 
 /* Footer Section */
+/* Style Footer Start*/
 .footer {
-  width: auto;
-  max-height: 50px;
+  min-width: 100%;
+  min-height: 10%;
+  margin-top: 10%;
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-size: 1.5em;
-  color: #ff69b4;
-  padding: 0.5em;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #ff69b4;
 }
+
+/* Style Footer End*/
 
 /*  Media Queries */
 
