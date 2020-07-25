@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses</title>
+    <!-- Window Icon -->
+    <link rel="icon" href="/static/Icons/icon.ico">
+    <!--    Styles      -->
+    <link rel="stylesheet" href="/static/css/styles-all.css" />
+    <link rel="stylesheet" href="/static/css/expenses.css">
+    <!--    Font Awesome    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--    Navbar Start  -->
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="Dashboard.html"><img src="/static/Icons/dogHouse.png" alt="home" class="home-icon" /></a>
+                <h1 class="logo">@Home Mobile Pet Grooming</h1>
+            </div>
+
+            <div class="expenses-logo-container">
+                <img src="/static/Icons/exspense.png" alt="invoice" class="expenses-icon" />
+                <h2 class="expenses-nav-header">Expenses</h2>
+            </div>
+        </div>
+        <!--    Navbar Ends  -->
+        <!-- Main Section Start -->
+        <div class="main-section-container">
+            <div class="expenses-form-container">
+                <!-- Expenses From Starts -->
+                <!-- Expenses Form Rows Starts -->
+                <div class="expense-form-row">
+                    <label for="expense-date" class="expense-label">Date</label>
+                    <input type="text" class="expense-data" id="expense-date" placeholder="enter expense date">
+                </div>
+                <div class="expense-form-row">
+                    <label for="expense-types" class="expense-label">Expense Type</label>
+                    <select name="expense-types" id="expense-types">
+                        <option value="select">Select Expense Type</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="equipment">Equipment</option>
+                        <option value="food">Food</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="expense-form-row">
+                    <label for="expense-description" class="expense-label">Description</label>
+                    <input class="expense-data" id="expense-description">
+                </div>
+                <div class="expense-form-row">
+                    <label for="expense-amount" class="expense-label">Amount</label>
+                    <input type="text" class="expense-data" id="expense-amount">
+                </div>
+                <div class="add-button-main-container">
+                    <div class="add-button-container">
+                        <a href="#" class="add-button">
+                            <img src="/static/Icons/plusCircleFill.jpg" alt="add" class="add-button-icon"
+                                id="add-button-icon"> Add
+                        </a>
+                    </div>
+                </div>
+                <!-- Expenses Form Rows Ends -->
+            </div>
+            <!-- Expenses From Ends -->
+
+            <!-- Expenses Table Container Start -->
+            <div class="expenses-table-container">
+                <h3 class="Expenses View">Expenses View</h3>
+                <!-- Expenses Table Start -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Amount (R)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020-01-01</td>
+                            <td>Equipment</td>
+                            <td>500ml Shampoo</td>
+                            <td>150.00</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-01</td>
+                            <td>Equipment</td>
+                            <td>500ml Shampoo</td>
+                            <td>150.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Expenses Table Ends -->
+            </div>
+            <!-- Expenses Table Container Ends -->
+        </div>
+        <!-- Button section start-->
+        <div class="button-container">
+            <div class="back-button-container">
+                <a href="templates/Finance.html" class="back-button" title="Back to Finance">
+                    <img src="/static/Icons/back.png" alt="cancel" id="back-button-icon">
+                </a>
+            </div>
+        </div>
+        <!--Button Section end-->
+        <!-- Footer -->
+        <div class="footer">Pet Grooming &copy; 2020</div>
+    </div>
+    <!-- Main Wrapper Ends -->
+</body>
+
+</html>
